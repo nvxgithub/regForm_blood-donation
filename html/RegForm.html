@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Donation Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <style>
         div.field {
             margin-bottom: 30px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -37,25 +44,24 @@
         <div class="field">
             <label for="bloodGroup">Blood Group:</label>
             <div>
-                <label>Blood Group:</label>
             
                 <input type="radio" id="oPositive" name="bloodGroup" value="O+">
                 <label for="oPositive">O+</label>
             
                 <input type="radio" id="oNegative" name="bloodGroup" value="O-">
-                <label for="oNegative">O-</label>
+                <label for="oNegative">O-</label><br>
             
                 <input type="radio" id="aPositive" name="bloodGroup" value="A+">
                 <label for="aPositive">A+</label>
             
                 <input type="radio" id="aNegative" name="bloodGroup" value="A-">
-                <label for="aNegative">A-</label>
+                <label for="aNegative">A-</label><br>
             
                 <input type="radio" id="bPositive" name="bloodGroup" value="B+">
                 <label for="bPositive">B+</label>
             
                 <input type="radio" id="bNegative" name="bloodGroup" value="B-">
-                <label for="bNegative">B-</label>
+                <label for="bNegative">B-</label><br>
             
                 <input type="radio" id="abPositive" name="bloodGroup" value="AB+">
                 <label for="abPositive">AB+</label>
@@ -91,13 +97,21 @@
         </div>
 
         <div class="field">
-            <label>Medicine Consumption in Last 72 Hours:</label>
-            <div>
-                <input type="checkbox" id="antibiotics" name="medicine" value="Antibiotics">
-                <label for="antibiotics">Antibiotics</label>
+            <label>Medicine Consumption in Last 72 Hours:</label><br>
+            <input type="checkbox" id="antibiotics" name="medicine" value="Antibiotics">
+            <label for="antibiotics">Antibiotics</label>
 
-                <!-- Repeat similar blocks for other medicines -->
-            </div>
+            <input type="checkbox" id="aspirin" name="medicine" value="Aspirin">
+            <label for="aspirin">Aspirin</label><br>
+
+            <input type="checkbox" id="alcohol" name="medicine" value="Alcohol">
+            <label for="alcohol">Alcohol</label>
+
+            <input type="checkbox" id="steroids" name="medicine" value="Steroids">
+            <label for="steroids">Steroids</label><br>
+
+            <input type="checkbox" id="vaccinations" name="medicine" value="Vaccinations">
+            <label for="vaccinations">Vaccinations</label>
         </div>
 
         <div class="field">
