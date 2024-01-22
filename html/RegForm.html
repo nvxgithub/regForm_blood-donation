@@ -15,11 +15,16 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        .header{
+            background-color: rgb(185, 60, 25);
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h2>Blood Donation Form</h2>
-
+    <div class="header p-4"> <h2>Blood Donation Form</h2></div>
+   
+<br>
     <form id="donorForm">
         <div class="field">
             <label for="fullName">Donor Full Name:</label>
@@ -115,8 +120,8 @@
         </div>
 
         <div class="field">
-            <button type="submit">Submit</button>
-            <button type="button" onclick="clearForm()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" onclick="clearForm()" class="btn btn-danger">Cancel</button>
         </div>
     </form>
 
